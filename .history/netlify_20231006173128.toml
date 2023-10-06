@@ -1,0 +1,6 @@
+[functions]
+external_node_modules = ["@meshsdk/core"]
+[[headers]]
+    for = "/*"
+        [headers.values]
+            Access-Control-Allow-Origin = "*"

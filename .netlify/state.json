@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Geneva",
+			"country": {
+				"code": "CH",
+				"name": "Switzerland"
+			},
+			"subdivision": {
+				"code": "GE",
+				"name": "Geneva"
+			},
+			"timezone": "Europe/Zurich",
+			"latitude": 46.2075,
+			"longitude": 6.1173
+		},
+		"timestamp": 1696615948261
+	}
+}

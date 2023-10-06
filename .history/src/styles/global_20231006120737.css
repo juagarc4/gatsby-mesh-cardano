@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(86, 154, 255);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.mr-wallet-button,
+.mr-menu-list {
+  background-color: greenyellow;
+  color: rgb(39, 39, 39);
+}
+
+/* Set the position of the dropdown container to relative */
+.dropdown {
+  position: relative;
+}
+
+/* Style the button that will show the dropdown on hover */
+.dropdown-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.dropdown-selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  margin: 0; /* Remove any margin to make the dropdown appear directly below the button */
+  border: none;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the links in the dropdown content */
+.dropdown-content li {
+  display: block;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Change the background color of links on hover */
+.dropdown-content li:hover {
+  background-color: #ddd;
+}

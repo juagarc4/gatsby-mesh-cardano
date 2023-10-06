@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/raul/workspace/sitewerk/gatsby/netlify/functions/verify-signature.js"],
+  "sourceRoot": "/var/folders/2c/zgtcs94s0yx4nt6w_67ry_hc0000gn/T/tmp-93134-W1N5AiXeDzxG",
+  "sourcesContent": ["import { checkSignature } from '@meshsdk/core'\n\nexport async function handler(event, context) {\n  const nonce = event.body.nonce // this is only for demo purposes\n  const userAddress = event.body.userAddress\n  const signature = event.body.signature\n\n  // do: get 'nonce' from user (database) using 'userAddress'\n\n  // do: check signature\n  const result = checkSignature(nonce, userAddress, signature)\n\n  // do: update 'nonce' in the database with another random string\n\n  // do: do what you need after user proof ownership\n  // it could be creating a valid JSON Web Token (JWT) or session\n  // it could be doing something offchain\n  // it could just be updating something in the database\n  return {\n    statusCode: 200,\n    headers: {\n      'Access-Control-Allow-Origin': '*',\n    },\n    body: JSON.stringify({ result }),\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,kBAA+B;AAE/B,eAAsB,QAAQ,OAAO,SAAS;AAC5C,QAAM,QAAQ,MAAM,KAAK;AACzB,QAAM,cAAc,MAAM,KAAK;AAC/B,QAAM,YAAY,MAAM,KAAK;AAK7B,QAAM,aAAS,4BAAe,OAAO,aAAa,SAAS;AAQ3D,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,SAAS;AAAA,MACP,+BAA+B;AAAA,IACjC;AAAA,IACA,MAAM,KAAK,UAAU,EAAE,OAAO,CAAC;AAAA,EACjC;AACF;",
+  "names": []
+}

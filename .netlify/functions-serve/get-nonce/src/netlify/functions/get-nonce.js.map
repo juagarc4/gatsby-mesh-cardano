@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/raul/workspace/sitewerk/gatsby/netlify/functions/get-nonce.js"],
+  "sourceRoot": "/var/folders/2c/zgtcs94s0yx4nt6w_67ry_hc0000gn/T/tmp-93134-osgKO20a3xGB",
+  "sourcesContent": ["import { generateNonce } from '@meshsdk/core'\n\nexport async function handler(event, context) {\n  const nonce = generateNonce('Sign to login in to Mesh: ')\n  return {\n    statusCode: 200,\n    headers: {\n      'Access-Control-Allow-Origin': '*',\n    },\n    body: JSON.stringify({ nonce }),\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,kBAA8B;AAE9B,eAAsB,QAAQ,OAAO,SAAS;AAC5C,QAAM,YAAQ,2BAAc,4BAA4B;AACxD,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,SAAS;AAAA,MACP,+BAA+B;AAAA,IACjC;AAAA,IACA,MAAM,KAAK,UAAU,EAAE,MAAM,CAAC;AAAA,EAChC;AACF;",
+  "names": []
+}

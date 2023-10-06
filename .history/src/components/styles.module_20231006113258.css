@@ -1,0 +1,43 @@
+.dropdown {
+	position: relative;
+}
+
+/* Style the button that will show the dropdown on hover */
+.dropdown-btn {
+	background-color: #f1f1f1;
+	color: #333;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+	position: absolute;
+	display: none;
+	background-color: #f1f1f1;
+	padding: 10px 0;
+	margin: 0; /* Remove any margin to make the dropdown appear directly below the button */
+	border: none;
+	z-index: 1;
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Style the links in the dropdown content */
+.dropdown-content li {
+	display: block;
+	color: #333;
+	padding: 10px 20px;
+	text-decoration: none;
+	list-style: none;
+	cursor: pointer;
+}
+
+/* Change the background color of links on hover */
+.dropdown-content li:hover {
+	background-color: #ddd;
+}
